@@ -1,0 +1,131 @@
+@media print,
+screen {
+    @page {
+        margin: 0;
+    }
+
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif !important;
+        font-size: 18px !important;
+    }
+
+    a:link {
+        text-decoration: none !important;
+    }
+
+    a:visited {
+        text-decoration: none !important;
+    }
+
+    a:hover {
+        text-decoration: none !important;
+    }
+
+    a:active {
+        text-decoration: none !important;
+    }
+
+    .main-header {
+        background-color: #313C4E;
+        color: #FFFFFF;
+        padding: 50px;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .designation {
+        font-size: 18px;
+        color: #4493A3
+    }
+
+    .summary {
+        margin-top: 15px;
+        text-align: justify;
+    }
+
+    .contacts {
+        background-color: #222A33;
+        color: #FFFFFF;
+    }
+
+    .contacts a {
+        color: #FFFFFF;
+        padding-left: 5px;
+    }
+
+    .contacts-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .section-title {
+        font-weight: bold;
+        font-size: 22px;
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: #4493A3;
+    }
+
+    .container .row {
+        margin-top: 15px;
+    }
+
+    .item {
+        padding: 5px 15px;
+        margin: 5px;
+        background-color: #333F50;
+        color: #FFFFFF;
+    }
+
+    .strengths {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .exp{
+        margin-top: 10px;
+    }
+
+    .exp-title {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .exp-duration {
+        font-style: italic;
+    }
+
+    .project {
+        margin-top: 10px;
+    }
+
+    .project-list {
+        margin-left: 25px;
+    }
+
+    .project-title {
+        font-size: 20px;
+    }
+
+    .project-highlights ul li::marker {
+        color: #313C4E
+    }
+
+    .education {
+        margin-left: 25px;
+    }
+
+    .collage-name {
+        font-weight: bold;
+    }
+
+    .degree {
+        font-style: italic;
+    }
+}
