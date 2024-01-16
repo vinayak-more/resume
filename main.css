@@ -71,7 +71,7 @@ screen {
     }
 
     .container .row {
-        margin-top: 15px;
+        margin-top: 25px;
     }
 
     .item {
@@ -98,7 +98,7 @@ screen {
         font-size: 20px;
     }
     .experience-item{
-       border-bottom: dotted;
+       border-bottom: dotted #d6d6d6;
     }
 
     .exp-duration {
