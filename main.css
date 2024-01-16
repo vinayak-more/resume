@@ -33,6 +33,7 @@ screen {
 
     .name {
         font-size: 30px;
+        text-transform: uppercase;
     }
 
     .designation {
@@ -92,9 +93,12 @@ screen {
         margin-top: 10px;
     }
 
-    .exp-title {
+    .exp-company{
         font-weight: bold;
         font-size: 20px;
+    }
+    .experience-item{
+       border-bottom: dotted;
     }
 
     .exp-duration {
