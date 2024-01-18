@@ -5,7 +5,7 @@ screen {
     }
 
     body {
-        font-family: Georgia, 'Times New Roman', Times, serif !important;
+        /* font-family: Georgia, 'Times New Roman', Times, serif !important; */
         font-size: 18px !important;
     }
 
@@ -38,7 +38,9 @@ screen {
 
     .designation {
         font-size: 18px;
-        color: #4493A3
+        color: #4493A3;
+        font-weight: bold;
+        
     }
 
     .summary {
