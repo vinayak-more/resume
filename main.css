@@ -77,10 +77,11 @@ screen {
     }
 
     .item {
-        padding: 5px 15px;
+        padding: 5px 10px;
         margin: 5px;
         background-color: #333F50;
         color: #FFFFFF;
+        font-size: 15px;
     }
 
     .strengths {
@@ -89,6 +90,7 @@ screen {
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
+        margin-top:10px;
     }
 
     .exp{
@@ -125,6 +127,7 @@ screen {
 
     .education {
         margin-left: 25px;
+        margin-top: 10px;
     }
 
     .collage-name {
