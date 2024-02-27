@@ -2,6 +2,7 @@
 screen {
     @page {
         margin: 0;
+        border: 1px solid black
     }
 
     body {
@@ -26,8 +27,8 @@ screen {
     }
 
     .main-header {
-        background-color: #313C4E;
-        color: #FFFFFF;
+        background-color: #dceefd;
+        color: #000000;
         padding: 50px;
     }
 
@@ -36,9 +37,12 @@ screen {
         /* text-transform: uppercase; */
     }
 
+    .highlighter{
+        color: #0a285a;
+    }
+
     .designation {
         font-size: 18px;
-        color: #4493A3;
         font-weight: bold;
         
     }
@@ -49,19 +53,20 @@ screen {
     }
 
     .contacts {
-        background-color: #222A33;
-        color: #FFFFFF;
+        
+        background-color: #b1d2f7;
+        color: #000000;
     }
 
     .contacts a {
-        color: #FFFFFF;
+        color: #000000;
         padding-left: 5px;
     }
 
     .contacts-row {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
     .section-title {
@@ -69,7 +74,6 @@ screen {
         font-size: 22px;
         text-transform: uppercase;
         text-decoration: underline;
-        color: #4493A3;
     }
 
     .container .row {
@@ -79,8 +83,8 @@ screen {
     .item {
         padding: 5px 10px;
         margin: 5px;
-        background-color: #333F50;
-        color: #FFFFFF;
+        background-color: #abcdfc;
+        color: #000000;
         font-size: 15px;
     }
 
