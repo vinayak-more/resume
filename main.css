@@ -38,7 +38,7 @@ screen {
     }
 
     .highlighter{
-        color: #0a285a;
+        color: #0f5ddf;;
     }
 
     .designation {
@@ -83,8 +83,8 @@ screen {
     .item {
         padding: 5px 10px;
         margin: 5px;
-        background-color: #abcdfc;
-        color: #000000;
+        background-color: #2874dc;
+        color: #ffffff;
         font-size: 15px;
     }
 
@@ -104,6 +104,7 @@ screen {
     .exp-company{
         font-weight: bold;
         font-size: 20px;
+        color: #0d157a;
     }
     .experience-item{
        border-bottom: dotted #d6d6d6;
