@@ -29,11 +29,13 @@ screen {
     .main-header {
         background-color: #dceefd;
         color: #000000;
-        padding: 30px 40px;
+        padding: 30px 65px;
     }
 
     .name {
         font-size: 30px;
+        color: #0d157a;
+        font-weight: bold;
         /* text-transform: uppercase; */
     }
 
@@ -141,5 +143,10 @@ screen {
 
     .degree {
         font-style: italic;
+    }
+
+    .skill-title{
+        color: #0d157a;
+        font-weight: bold;
     }
 }
