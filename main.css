@@ -27,9 +27,8 @@ screen {
     }
 
     .main-header {
-        background-color: #dceefd;
         color: #000000;
-        padding: 15px 30px;
+        padding: 15px 30px 0 30px;
     }
 
     .custom-padding{
@@ -38,13 +37,8 @@ screen {
 
     .name {
         font-size: 30px;
-        color: #0d157a;
         font-weight: bold;
-        /* text-transform: uppercase; */
-    }
-
-    .highlighter{
-        color: #0f5ddf;;
+        text-align: center;
     }
 
     .designation {
@@ -59,8 +53,6 @@ screen {
     }
 
     .contacts {
-        
-        background-color: #b1d2f7;
         color: #000000;
     }
 
@@ -103,17 +95,29 @@ screen {
         margin-top:10px;
     }
 
-    .exp{
+    .mt-10{
         margin-top: 10px;
+    }
+    .plr-30{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .fs-15{
+        font-size: 15px;
+    }
+
+    .pd-l-25{
+        padding-left: 25px !important;
+    }
+
+    hr {
+        border : 1px dashed grey !important;
     }
 
     .exp-company{
         font-weight: bold;
         font-size: 20px;
-        color: #0d157a;
-    }
-    .experience-item{
-       border-bottom: dotted #d6d6d6;
     }
 
     .exp-duration {
@@ -150,7 +154,6 @@ screen {
     }
 
     .skill-title{
-        color: #0d157a;
         font-weight: bold;
     }
 }
