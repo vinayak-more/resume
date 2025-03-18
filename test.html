@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .timer, .score {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .question {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        .input-group input {
+            padding: 10px;
+            font-size: 18px;
+            width: 100px;
+            text-align: center;
+        }
+        .button-group button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="timer" id="timer">01:00</div>
+        <div class="score" id="score">Score: 0</div>
+        <div class="question" id="question">What is <br> 2 + 2?</div>
+        <div class="input-group">
+            <input type="number" id="answer" placeholder="Your answer">
+        </div>
+        <div class="button-group">
+            <button onclick="checkAnswer()">Submit</button>
+            <button onclick="nextQuestion()">Next</button>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        let timeLeft = 60;
+        let score = 0;
+        const timerElement = document.getElementById('timer');
+        const scoreElement = document.getElementById('score');
+
+        function updateTimer() {
+            if (timeLeft > 0) {
+                timeLeft--;
+                let minutes = Math.floor(timeLeft / 60);
+                let seconds = timeLeft % 60;
+                timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            } else {
+                alert('Time is up!');
+                // Add any additional logic for when the time is up
+            }
+        }
+
+        function checkAnswer() {
+            // Logic to check the answer and update the score
+            let answer = document.getElementById('answer').value;
+            if (answer == 4) { // Example logic for checking the answer
+                score++;
+                scoreElement.textContent = `Score: ${score}`;
+                document.getElementById('result').textContent = 'Correct!';
+            } else {
+                document.getElementById('result').textContent = 'Incorrect!';
+            }
+        }
+
+        function nextQuestion() {
+            // Logic to generate the next question
+            document.getElementById('question').textContent = 'What is 3 + 3?'; // Example question
+            document.getElementById('answer').value = '';
+            document.getElementById('result').textContent = '';
+        }
+
+        setInterval(updateTimer, 1000);
+
+        // JavaScript logic for the game will go here
+    </script>
+</body>
+</html>
